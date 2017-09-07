@@ -1,0 +1,7 @@
+: init description file
+: ----------------------
+: comments with leading ':'
+: Dasgupta&Schulman with 'dasgupta_schulman:<seed range spec>'
+: Dasgupta&Schulman++ with 'spherical_adaptive:<seed range spec>'
+
+uniform_lloyds_means2gmm:50:1-30.1

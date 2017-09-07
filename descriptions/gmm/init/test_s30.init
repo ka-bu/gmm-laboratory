@@ -1,0 +1,42 @@
+: init description file
+: ----------------------
+: comments with leading ':'
+: Dasgupta&Schulman with 'dasgupta_schulman:<seed range spec>'
+: Dasgupta&Schulman++ with 'spherical_adaptive:<seed range spec>'
+
+
+:
+: baselines
+:
+
+uniform_lloyds_means2gmm:25:1-30.1
+adaptive_lloyds_means2gmm:25:1-30.1
+
+:
+: gonzalez
+: 
+
+: WARNING: choose correct sample-factors!
+:: e.g. gonzalez_forgmm_then_lloydsforgmm:use2gmm:spherical:sampleSizeFactorList:25:spherical-lloyds:1-30.1
+
+gonzalez_lloyds_means2gmm:25:1-30.1
+: non-spherical
+:gonzalez_forgmm_then_lloydsforgmm:1:0:0.1,1:25:0:1-30.1
+: sphercial
+gonzalez_forgmm_then_lloydsforgmm:1:1:0.1,1:25:1:1-30.1
+
+
+:
+: alt-adapt-means2gmm
+:
+
+alternately_adaptivemeans_means2gmm:0.5,1:1:1-30.1
+: substeps of lloyds (for gmm)...
+alternately_adaptivemeans_means2gmm_then_lloyds:0.5,1:0:25:1-30.1
+alternately_adaptivemeans_means2gmm_then_lloydsforgmm:0.5,1:0:25:0:1-30.1
+: ... and spherical versions
+alternately_adaptivemeans_means2gmm_then_lloyds:0.5,1:0:25:1-30.1
+alternately_adaptivemeans_means2gmm_then_lloydsforgmm:0.5,1:1:25:1:1-30.1
+
+
+

@@ -1,0 +1,7 @@
+: algo description file
+: ----------------------
+: comments with leading ':'
+: EM with 'first|next:em:<steps range spec>:<seed range spec>'
+: PEM with 'first|next:pem:<steps range spec>:<seed range spec>'
+
+first:em:75:1

@@ -1,0 +1,41 @@
+
+
+:AdaptiveFuzzyMeans:2:1
+:UniformMeans2GMM:2
+
+
+AdaptiveMeans2GMM:1
+
+
+
+
+:.......................................................:
+
+:EmptyInit
+:Alt_AdaptMean+Means2GMM:1:1:1
+
+
+:.................... no-intermediate ..................:
+
+:UniformMeans2GMM:1
+:AdaptiveMeans2GMM:1
+:UniformMeans2GMM:1
+:UniformMeans2MPEMM:1:1
+
+:EmptyInit
+
+
+:.................. test-intermediate ..................:
+:
+: baselines
+:
+:UniformLloydsMeans2GMM:25:1-30.1
+:AdaptiveLloydsMeans2GMM:25:1.1
+:GonzalezLloydsMeans2GMM:25:1-1.1
+:
+: adaptive initializations (spherical)
+: 
+:GonzalezForGMM_LloydsForGMM:1:1:0.1,1:25:1:1-30.1
+:Alt_AdaptMean+Means2GMM_LLoydsForGMM:0.5,0.9,1:1:25:1:1-30.1
+:Alt_AdaptMean+Means2GMM_LLoydsForGMM:1:1:25:1:1
+:Alt_AdaptMean+Means2GMM:1:1:1

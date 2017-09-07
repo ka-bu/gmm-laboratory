@@ -1,0 +1,7 @@
+: data description file
+: ----------------------
+: comments with leading ':'
+: generated data sets with 'gen:<size>:<dim range specs>:<k range specs>:<gen range specs>:<weight exp range specs>'
+: loaded data sets with 'load:<filename>:<first coordinate>-<last coordinate>.<block length>:<k range specs>(:normalize)'
+
+load:../data/spambase/spambase.csv:1-3:3,10,20
