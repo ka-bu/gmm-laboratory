@@ -28,19 +28,19 @@ a laboratory for model based clustering with Gaussian mixture models
 * GLFW
   * available at http://www.glfw.org
   * unzip and then:
-'''' 
+````
    cd GLFWfolder
    cmake . 
    make
    sudo make install
-''''
+````
 * AntTweakBar
   * available at http://anttweakbar.sourceforge.net
   * unzip and then:
-''''
+````
   cd AntTweakBar/src
   make 
-''''
+````
   * copy header files from AntTweakBar/include e.g. to /usr/local/include
   * copy libraries from AntTweakBar/lib e.g. to  /usr/local/lib
   
@@ -52,12 +52,12 @@ a laboratory for model based clustering with Gaussian mixture models
 
 Sourcecode provided on this webpage comes without any warranty. Use at your own risk. 
 
-''''
+````
 premake4 gmake 
 cd build
 make gmmlab
 make testlab
 
 ./gmmlab --config config/gmmlab/gmmlab.cfg
-''''
+````
 
