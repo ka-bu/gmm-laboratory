@@ -8,6 +8,7 @@ a laboratory for model based clustering with Gaussian mixture models
 
 * visualization (gmmlab)
 
+![gmmlab](screenshots/Screenshot_20170907_112557.png)
 * automatic evaluation with respect to a large number of data sets (testlab)
 
 
